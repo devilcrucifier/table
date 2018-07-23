@@ -30,20 +30,24 @@ class App extends Component {
         Header: '#',
         accessor: 'id',
         width: 100,
+        sortable: false,
       },
       {
         Header: 'Title',
-        accessor: 'title'
+        accessor: 'title',
+        sortable: false,
       },
       {
         Header: 'User Id',
         accessor: 'userId',
         width: 150,
+        sortable: false,
         },
       {
         Header: 'Size',
         id: 'body',
         width: 150,
+        sortable: false,
         Cell: data => data.original.body.length
       },
     ];
